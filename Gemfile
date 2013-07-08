@@ -2,10 +2,10 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem "middleman", "~>3.1.3"
+gem "middleman", "~> 3.1.3"
 
 # Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
+gem "middleman-livereload", github: "middleman/middleman-livereload"
 
 # For faster file watcher updates:
 # gem "wdm", "~> 0.1.0") # Windows
@@ -16,3 +16,8 @@ platforms :mri_18 do
 end
 
 gem "bootstrap-sass"
+gem "font-awesome-rails", "~> 3.2.1.2"
+
+# Provide some hints for bundler
+gem "railties", "~> 3.2.13"
+gem "activesupport", "~> 3.2.13"

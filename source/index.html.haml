@@ -4,6 +4,8 @@ title: Hello World - Middleman
 
 .row
   .span12
-    %h1= current_page.data.title
+    %h1
+      %i.icon.icon-rocket
+      = current_page.data.title
     %p
       = link_to 'Read Online Documentation', 'http://middlemanapp.com/', title: 'Read Online Documentation', target: '_blank'
